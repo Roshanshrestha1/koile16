@@ -1,58 +1,78 @@
 # 🐨 Koala Birthday App
 
-A beautiful and interactive birthday surprise website featuring adorable koalas and heartfelt messages.
+A special birthday surprise website for Anjana's 16th birthday, filled with love, koalas, and sweet memories!
 
-## 🌟 Features
+## 🚀 Deployment to GitHub Pages
 
-- **Interactive Koala Gallery**: Browse through cute koala images
-- **Birthday Messages**: Personalized birthday wishes
-- **Responsive Design**: Works perfectly on all devices
-- **Modern UI**: Built with React, TypeScript, and Tailwind CSS
+This project is now configured for GitHub Pages deployment. Here are the steps to deploy:
 
-## 🚀 Live Demo
+### Option 1: Automatic Deployment (Recommended)
 
-**URL**: https://roshanshrestha1.github.io/koile16/
+1. **Push to GitHub**: Push your code to a GitHub repository
+2. **Enable GitHub Pages**: 
+   - Go to your repository settings
+   - Navigate to "Pages" section
+   - Select "GitHub Actions" as the source
+3. **Automatic Deployment**: The GitHub Actions workflow will automatically deploy your site when you push to the `main` branch
 
-## 🛠️ Tech Stack
+### Option 2: Manual Deployment
 
-- **Frontend**: React 18 + TypeScript
-- **Styling**: Tailwind CSS + shadcn/ui components
-- **Build Tool**: Vite
-- **Deployment**: GitHub Pages
+1. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-## 📦 Installation
+2. **Build the project**:
+   ```bash
+   npm run build
+   ```
 
-1. Clone the repository:
+3. **Deploy to GitHub Pages**:
+   ```bash
+   npm run deploy
+   ```
+
+### Option 3: Using GitHub CLI
+
+If you have GitHub CLI installed:
 ```bash
-git clone https://github.com/Roshanshrestha1/koile16.git
-cd koile16
+gh-pages -d dist
 ```
 
-2. Install dependencies:
-```bash
-npm install
-```
+## 🛠️ Development
 
-3. Start development server:
-```bash
-npm run dev
-```
+- **Start development server**: `npm run dev`
+- **Build for production**: `npm run build`
+- **Preview production build**: `npm run preview`
+- **Lint code**: `npm run lint`
 
-## 🏗️ Build
+## 📁 Project Structure
 
-To build for production:
-```bash
-npm run build
-```
+- `src/` - Source code
+- `dist/` - Built files for deployment
+- `.github/workflows/` - GitHub Actions workflow for automatic deployment
 
-## 📱 Usage
+## 🎯 Features
 
-Simply open the live website and enjoy the interactive koala birthday experience!
+- Beautiful koala-themed birthday celebration
+- Responsive design
+- Modern React with TypeScript
+- Tailwind CSS for styling
+- Shadcn/ui components
 
-## 🤝 Contributing
+## 🔧 Configuration
 
-Feel free to contribute to this project by submitting issues or pull requests.
+The project is configured with:
+- **Base path**: `/koila-72/` (for GitHub Pages)
+- **Build output**: `dist/` directory
+- **Assets**: Optimized images and CSS
 
-## 📄 License
+## 📝 Notes
 
-This project is open source and available under the [MIT License](LICENSE).
+- The base path in `vite.config.ts` is set to `/koila-72/` for GitHub Pages compatibility
+- Make sure your GitHub repository name matches the base path for proper deployment
+- The project uses modern React patterns with hooks and functional components
+
+---
+
+Made with ❤️ for a special birthday celebration! 🎉
