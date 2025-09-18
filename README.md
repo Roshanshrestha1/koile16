@@ -69,7 +69,7 @@ The project is configured with:
 
 ## 📝 Notes
 
-- The base path in `vite.config.ts` is set to `/koila-72/` for GitHub Pages compatibility
+- The base path in `vite.config.ts` is set to `/koile16/` for GitHub Pages compatibility
 - Make sure your GitHub repository name matches the base path for proper deployment
 - The project uses modern React patterns with hooks and functional components
 
