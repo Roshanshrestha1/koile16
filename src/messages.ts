@@ -2,7 +2,7 @@
 
 export const messages = {
   // Love Letter Section
-  loveLetterTitle: "💌 My Precious Anjana - My Everything 💌",
+  loveLetterTitle: "💕💕💕💕💕💕💕💕💕💕💕💕💕💕💕\n💌 My Precious Anjana - My Everything 💌\n💕💕💕💕💕💕💕💕💕💕💕💕💕💕💕",
   loveLetterSubtitle: "On Your Magical Sweet 16th Birthday ✨",
   
   loveLetterParagraph1: "My Beloved Anjana, today marks the most special day - your 16th birthday! 🎉 As I write this letter, my heart overflows with endless love and pure joy to celebrate you, the most precious soul who has become my entire universe.",
@@ -22,7 +22,7 @@ export const messages = {
   loveLetterClosing2: "Your Forever Loving Heart 💕👑✨",
   
   // Photo Gallery Section
-  photoGalleryTitle: "🐨 Magical Birthday Memories for My Princess 🎂",
+  photoGalleryTitle: "🎈👑🌹🦋🎁✨🌹🌹🌟🎂✨👑🐨✨🎁🐨🐨✨🦋💕✨🎁✨💕✨🎈💕🌹🦋🦋👑🌹🌹🎈🌹🌟🎁🎁🎂🎂\n🐨 Magical Birthday Memories for My Princess 🎂\n🐨 Magical Birthday Memories for My Princess 🎂",
   photoGallerySubtitle: "Every moment with you is a treasure worth celebrating! 💎✨",
   
   koalaCard1Title: "🎉 Royal Koala Birthday Kingdom 🎉",
@@ -39,5 +39,8 @@ export const messages = {
   
   // Footer Section
   finalTitle: "🎉 Sweet 16 Never Looked So Beautiful! 🎉",
-  finalMessage: "Anjana, you are the sweetest, most wonderful person, and today we celebrate YOU! May this special day be filled with love, laughter, and all your favorite things - especially koalas! 🐨💕"
+  finalMessage: "Anjana, you are the sweetest, most wonderful person, and today we celebrate YOU! May this special day be filled with love, laughter, and all your favorite things - especially koalas! 🐨💕",
+  
+  // Beautiful Emoji Footer
+  emojiFooter: "🎂🎈🎁💝🐨💕🎉🎊"
 };
