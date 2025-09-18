@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🐨 Koala Birthday App - Live & Working! 🎉
 
 A special birthday surprise website for Anjana's 16th birthday, filled with love, koalas, and sweet memories!
@@ -92,3 +93,6 @@ koila-72/
 ---
 
 Made with ❤️ for a special birthday celebration! 🎂🎈🎁💝🐨💕🎉🎊
+=======
+# koile16
+>>>>>>> 55eb33bc863918f0020970bc561511c5343a3b5d
