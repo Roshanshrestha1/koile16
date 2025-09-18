@@ -39,6 +39,13 @@ jobs:
     - name: Build
       run: npm run build
       
+    - name: Verify build output
+      run: |
+        echo "Build output contents:"
+        ls -la dist/
+        echo "HTML content:"
+        head -30 dist/index.html
+      
     - name: Setup Pages
       uses: actions/configure-pages@v4
       
@@ -46,6 +53,7 @@ jobs:
       uses: actions/upload-pages-artifact@v3
       with:
         path: './dist'
+        name: github-pages
         
     - name: Deploy to GitHub Pages
       id: deployment
