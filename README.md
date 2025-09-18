@@ -4,9 +4,9 @@ A special birthday surprise website for Anjana's 16th birthday, filled with love
 
 ## 🚀 Deployment to GitHub Pages
 
-This project is now configured for GitHub Pages deployment. Here are the steps to deploy:
+This project is configured for automatic GitHub Pages deployment from the `main` branch.
 
-### Option 1: Automatic Deployment (Recommended)
+### Automatic Deployment (Recommended)
 
 1. **Push to GitHub**: Push your code to a GitHub repository
 2. **Enable GitHub Pages**: 
@@ -15,7 +15,7 @@ This project is now configured for GitHub Pages deployment. Here are the steps t
    - Select "GitHub Actions" as the source
 3. **Automatic Deployment**: The GitHub Actions workflow will automatically deploy your site when you push to the `main` branch
 
-### Option 2: Manual Deployment
+### Manual Build (for testing)
 
 1. **Install dependencies**:
    ```bash
@@ -27,17 +27,7 @@ This project is now configured for GitHub Pages deployment. Here are the steps t
    npm run build
    ```
 
-3. **Deploy to GitHub Pages**:
-   ```bash
-   npm run deploy
-   ```
-
-### Option 3: Using GitHub CLI
-
-If you have GitHub CLI installed:
-```bash
-gh-pages -d dist
-```
+The built files will be in the `dist/` directory, ready for deployment.
 
 ## 🛠️ Development
 
