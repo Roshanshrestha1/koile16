@@ -12,8 +12,8 @@ const App = () => (
   <div style={{ padding: '20px', backgroundColor: 'pink', color: 'black', minHeight: '100vh' }}>
     <h1>🐨 TEST - Koala Birthday App is Working! 🎉</h1>
     <p>If you can see this, the React app is loading correctly!</p>
-    <p>Current URL: {window.location.href}</p>
-    <p>Current pathname: {window.location.pathname}</p>
+    <p>Current URL: {typeof window !== 'undefined' ? window.location.href : 'Server-side'}</p>
+    <p>Current pathname: {typeof window !== 'undefined' ? window.location.pathname : 'Server-side'}</p>
   </div>
 );
 
