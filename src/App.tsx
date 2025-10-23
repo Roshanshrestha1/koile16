@@ -8,13 +8,14 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <div style={{ padding: '20px', backgroundColor: 'pink', color: 'black', minHeight: '100vh' }}>
-    <h1>🐨 TEST - Koala Birthday App is Working! 🎉</h1>
-    <p>If you can see this, the React app is loading correctly!</p>
-    <p>Current URL: {typeof window !== 'undefined' ? window.location.href : 'Server-side'}</p>
-    <p>Current pathname: {typeof window !== 'undefined' ? window.location.pathname : 'Server-side'}</p>
-  </div>
-);
+const App = () => {
+  console.log('App component is rendering!');
+  return (
+    <div style={{ padding: '20px', backgroundColor: 'pink', color: 'black', minHeight: '100vh' }}>
+      <h1>🐨 TEST - Koala Birthday App is Working! 🎉</h1>
+      <p>If you can see this, the React app is loading correctly!</p>
+    </div>
+  );
+};
 
 export default App;
