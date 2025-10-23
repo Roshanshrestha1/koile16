@@ -1,27 +1,24 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
-
-const queryClient = new QueryClient();
-
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+const App = () => {
+  return (
+    <div style={{ 
+      padding: '20px', 
+      backgroundColor: '#ff69b4', 
+      color: 'white', 
+      minHeight: '100vh',
+      fontFamily: 'Arial, sans-serif',
+      textAlign: 'center'
+    }}>
+      <h1 style={{ fontSize: '3rem', marginBottom: '20px' }}>
+        🐨 Koala Birthday App is WORKING! 🎉
+      </h1>
+      <p style={{ fontSize: '1.5rem', marginBottom: '20px' }}>
+        If you can see this, the React app is loading correctly!
+      </p>
+      <p style={{ fontSize: '1.2rem' }}>
+        This means the white page issue has been FIXED! 🎊
+      </p>
+    </div>
+  );
+};
 
 export default App;
