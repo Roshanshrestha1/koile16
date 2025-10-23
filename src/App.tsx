@@ -9,19 +9,12 @@ import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter basename="/koile16">
-        <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+  <div style={{ padding: '20px', backgroundColor: 'pink', color: 'black', minHeight: '100vh' }}>
+    <h1>🐨 TEST - Koala Birthday App is Working! 🎉</h1>
+    <p>If you can see this, the React app is loading correctly!</p>
+    <p>Current URL: {window.location.href}</p>
+    <p>Current pathname: {window.location.pathname}</p>
+  </div>
 );
 
 export default App;
