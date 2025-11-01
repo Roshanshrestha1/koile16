@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🐨 Koala Birthday App - Mini Version! 🎉</title>
+  <meta name="description" content="A special birthday surprise for Anjana's 16th birthday!">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    :root {
+      --birthday-pink: #f687b3;
+      --birthday-lavender: #c4a9e0;
+      --birthday-gold: #f6e05e;
+      --birthday-cream: #fffef7;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, hsl(330 85% 75%) 0%, hsl(280 60% 85%) 25%, hsl(270 70% 80%) 50%, hsl(340 80% 80%) 75%, hsl(25 85% 85%) 100%);
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .gradient-romantic {
+      background: linear-gradient(135deg, hsl(330 85% 75%) 0%, hsl(280 60% 85%) 25%, hsl(270 70% 80%) 50%, hsl(340 80% 80%) 75%, hsl(25 85% 85%) 100%);
+    }
+    
+    .gradient-birthday {
+      background: linear-gradient(180deg, hsl(320 30% 98%) 0%, hsl(330 40% 95%) 25%, hsl(280 50% 90%) 50%, hsl(270 60% 88%) 75%, hsl(340 70% 92%) 100%);
+    }
+    
+    .gradient-love {
+      background: radial-gradient(circle at center, hsl(330 85% 75% / .2) 0%, hsl(280 60% 85% / .15) 30%, hsl(270 70% 80% / .1) 60%, transparent 100%);
+    }
+    
+    .shadow-romantic {
+      box-shadow: 0 15px 50px hsl(330 60% 75% / .25);
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    
+    @keyframes bounceIn {
+      0% { transform: scale(0) rotate(-180deg); opacity: 0; }
+      50% { transform: scale(1.2) rotate(-90deg); opacity: 0.8; }
+      100% { transform: scale(1) rotate(0deg); opacity: 1; }
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes waveHands {
+      0%, 100% { transform: rotate(0deg) scale(1); }
+      25% { transform: rotate(10deg) scale(1.05); }
+      50% { transform: rotate(-5deg) scale(1.1); }
+      75% { transform: rotate(8deg) scale(1.05); }
+    }
+    
+    @keyframes hugArms {
+      0%, 100% { transform: scale(1) rotate(0deg); }
+      50% { transform: scale(1.15) rotate(2deg); }
+    }
+    
+    @keyframes blowKiss {
+      0%, 100% { transform: scale(1) translateY(0); }
+      30% { transform: scale(1.1) translateY(-5px); }
+      60% { transform: scale(1.05) translateY(-3px); }
+    }
+    
+    @keyframes koalaDance {
+      0%, 100% { transform: translateY(0) rotate(0deg) scale(1); }
+      25% { transform: translateY(-10px) rotate(3deg) scale(1.02); }
+      50% { transform: translateY(-5px) rotate(-2deg) scale(1.05); }
+      75% { transform: translateY(-8px) rotate(1deg) scale(1.03); }
+    }
+    
+    .animate-float {
+      animation: float 3s ease-in-out infinite;
+    }
+    
+    .animate-heart-beat {
+      animation: heartbeat 1.5s ease-in-out infinite;
+    }
+    
+    .animate-bounce-in {
+      animation: bounceIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    
+    .animate-fade-in {
+      animation: fadeIn 1s ease-out;
+    }
+    
+    .animate-slide-up {
+      animation: slideUp 0.8s ease-out;
+    }
+    
+    .animate-wave-hands {
+      animation: waveHands 2s ease-in-out infinite;
+    }
+    
+    .animate-hug-arms {
+      animation: hugArms 3s ease-in-out infinite;
+    }
+    
+    .animate-blow-kiss {
+      animation: blowKiss 2.5s ease-in-out infinite;
+    }
+    
+    .animate-koala-dance {
+      animation: koalaDance 4s ease-in-out infinite;
+    }
+    
+    .font-dancing {
+      font-family: 'Dancing Script', cursive;
+    }
+    
+    .font-vibes {
+      font-family: 'Great Vibes', cursive;
+    }
+    
+    .font-playfair {
+      font-family: 'Playfair Display', serif;
+    }
+    
+    .font-poppins {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'birthday-pink': '#f687b3',
+            'birthday-lavender': '#c4a9e0',
+            'birthday-gold': '#f6e05e',
+            'birthday-cream': '#fffef7',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="app" class="min-h-screen"></div>
+  
+  <script>
+    // Floating Hearts Component
+    function generateFloatingHearts() {
+      let html = '<div class="fixed inset-0 pointer-events-none overflow-hidden">';
+      for (let i = 0; i < 15; i++) {
+        const x = Math.random() * 100;
+        const y = Math.random() * 100;
+        const size = Math.random() * 20 + 10;
+        const delay = Math.random() * 3;
+        html += `<div class="absolute animate-float opacity-20" style="left: ${x}%; top: ${y}%; animation-delay: ${delay}s; font-size: ${size}px">💕</div>`;
+      }
+      html += '</div>';
+      return html;
+    }
+    
+    // App state
+    let showSurprise = false;
+    let currentStep = 0;
+    let showLetter = false;
+    let appMessages = null;
+    
+    // Load messages from messages.txt file
+    async function loadMessages() {
+      try {
+        // Add cache-busting timestamp to prevent browser caching
+        const timestamp = new Date().getTime();
+        const response = await fetch(`messages.txt?t=${timestamp}`);
+        
+        if (!response.ok) {
+          throw new Error(`Failed to load messages.txt: ${response.status}`);
+        }
+        
+        const text = await response.text();
+        
+        // Remove any BOM or hidden characters
+        const cleanText = text.trim().replace(/^\uFEFF/, '');
+        appMessages = JSON.parse(cleanText);
+        
+        console.log('✅ Messages loaded successfully from messages.txt!');
+        
+        // Build messages array with image paths
+        messages = [
+          {
+            title: appMessages.dramaticSequence[0].title,
+            subtitle: appMessages.dramaticSequence[0].subtitle,
+            girlKoala: "girl-koala-waving.jpg",
+            boyKoala: "boy-koala-waving.jpg",
+            animation: "animate-wave-hands",
+            font: "font-dancing",
+            color: "text-pink-500",
+            buttonText: appMessages.dramaticSequence[0].buttonText
+          },
+          {
+            title: appMessages.dramaticSequence[1].title,
+            subtitle: appMessages.dramaticSequence[1].subtitle,
+            girlKoala: "girl-koala-cake.jpg",
+            boyKoala: "boy-koala-birthday.jpg",
+            animation: "animate-koala-dance",
+            font: "font-vibes",
+            color: "text-yellow-400",
+            buttonText: appMessages.dramaticSequence[1].buttonText
+          },
+          {
+            title: appMessages.dramaticSequence[2].title,
+            subtitle: appMessages.dramaticSequence[2].subtitle,
+            girlKoala: "girl-koala-cute.jpg",
+            boyKoala: "boy-koala-cute.jpg",
+            animation: "animate-koala-dance",
+            font: "font-dancing",
+            color: "text-pink-500",
+            buttonText: appMessages.dramaticSequence[2].buttonText
+          },
+          {
+            title: appMessages.dramaticSequence[3].title,
+            subtitle: appMessages.dramaticSequence[3].subtitle,
+            girlKoala: "girl-koala-hugging.jpg",
+            boyKoala: "boy-koala-hugging.jpg",
+            animation: "animate-hug-arms",
+            font: "font-playfair",
+            color: "text-yellow-400",
+            buttonText: appMessages.dramaticSequence[3].buttonText
+          },
+          {
+            title: appMessages.dramaticSequence[4].title,
+            subtitle: appMessages.dramaticSequence[4].subtitle,
+            girlKoala: "girl-koala-special.jpg",
+            boyKoala: "boy-koala-special.jpg",
+            animation: "animate-koala-dance",
+            font: "font-vibes",
+            color: "text-purple-400",
+            buttonText: appMessages.dramaticSequence[4].buttonText
+          },
+          {
+            title: appMessages.dramaticSequence[5].title,
+            subtitle: appMessages.dramaticSequence[5].subtitle,
+            girlKoala: "girl-koala-kissing.jpg",
+            boyKoala: "boy-koala-kissing.jpg",
+            animation: "animate-blow-kiss",
+            font: "font-dancing",
+            color: "text-pink-600",
+            buttonText: appMessages.dramaticSequence[5].buttonText
+          }
+        ];
+        
+        // Set messages
+        loveLetterMessages = appMessages.loveLetter;
+        galleryMessages = appMessages.photoGallery;
+        letterScreenMessages = appMessages.letterScreen;
+        finalFooterMessages = appMessages.finalFooter;
+        
+        // Initial render after loading
+        render();
+      } catch (error) {
+        console.error('❌ Error loading messages.txt:', error);
+        console.log('💡 Make sure messages.txt is in the same folder as index.html');
+        console.log('💡 Trying fallback messages...');
+        // Fallback to default messages if file not found
+        loadDefaultMessages();
+        render();
+      }
+    }
+    
+    // Function to reload messages (for testing)
+    function reloadMessages() {
+      console.log('🔄 Reloading messages from messages.txt...');
+      loadMessages();
+    }
+    
+    // Expose reload function globally for easy testing
+    window.reloadMessages = reloadMessages;
+    
+    let messages = [];
+    let loveLetterMessages = {};
+    let galleryMessages = {};
+    let letterScreenMessages = {};
+    let finalFooterMessages = {};
+    
+    // Default fallback messages
+    function loadDefaultMessages() {
+      messages = [
+        {
+          title: "💕 I want to say you something 💕",
+          subtitle: "Something very special from my heart...",
+          girlKoala: "girl-koala-waving.jpg",
+          boyKoala: "boy-koala-waving.jpg",
+          animation: "animate-wave-hands",
+          font: "font-dancing",
+          color: "text-pink-500",
+          buttonText: "Tell me 💫"
+        }
+      ];
+      loveLetterMessages = {
+        loveLetterTitle: "💌 My Precious Anjana - My Everything 💌",
+        loveLetterSubtitle: "On Your Magical Sweet 16th Birthday ✨",
+        loveLetterParagraph1: "My Beloved Anjana, today marks the most special day - your 16th birthday! 🎉",
+        loveLetterQuote: "Just like the adorable koalas you love so deeply...",
+        loveLetterParagraph2: "Sixteen magical years ago...",
+        loveLetterParagraph3: "You are not just a person in my life...",
+        loveLetterParagraph4: "As you blow out your 16 candles today...",
+        loveLetterBirthdayWish: "Happy 16th Birthday! 🎈👑",
+        loveLetterBirthdayMessage: "You are loved beyond infinity! 💝✨",
+        loveLetterClosing1: "With every beat of my heart,",
+        loveLetterClosing2: "Your Forever Loving Heart 💕👑✨"
+      };
+      galleryMessages = {
+        photoGalleryTitle: "🐨 Magical Birthday Memories 🎂",
+        photoGallerySubtitle: "Every moment with you is a treasure! 💎✨",
+        koalaCard1Title: "🎉 Royal Koala Birthday Kingdom 🎉",
+        koalaCard1Text: "Just like these adorable koalas...",
+        koalaCard2Title: "🎂 Enchanted Sweet 16 Dreams 🎂",
+        koalaCard2Text: "A cake as beautiful and magical...",
+        centralMessage1: "🎈 Happy Birthday! 🎈",
+        centralMessage2: "You don't just make every day brighter...",
+        footerTitle: "🎉 Sweet 16 Never Looked So Beautiful! 🎉",
+        footerMessage: "Anjana, you are the sweetest...",
+        finalTitle: "🎉 Sweet 16 Never Looked So Beautiful! 🎉",
+        finalMessage: "Anjana, you are the sweetest, most wonderful person..."
+      };
+      letterScreenMessages = {
+        title1: "Happy Sweet 16 happy birthday sweet heart now you are turn 16",
+        title2: "Beautiful Anjana! 🎉",
+        message: "🐨 Click on the magical letter to read your special surprise! 🐨"
+      };
+      finalFooterMessages = {
+        title: "🎉 Sweet 16 Never Looked So Beautiful! 🎉",
+        message: "Anjana, you are the sweetest, most wonderful person..."
+      };
+    }
+    
+    function handleNext() {
+      if (currentStep < messages.length - 1) {
+        currentStep += 1;
+        render();
+      } else {
+        showLetter = true;
+        render();
+      }
+    }
+    
+    function handleLetterClick() {
+      showSurprise = true;
+      showLetter = false;
+      render();
+    }
+    
+    // Render function
+    function render() {
+      const app = document.getElementById('app');
+      let html = generateFloatingHearts();
+      
+      if (!showSurprise) {
+        // Dramatic Sequence
+        const msg = messages[currentStep];
+        html += `
+          <div class="min-h-screen flex items-center justify-center gradient-romantic relative overflow-hidden">
+            ${currentStep > 0 ? `
+              <div class="absolute inset-0">
+                <img src="koala-birthday.jpg" alt="Birthday Koala" class="w-full h-full object-cover opacity-20">
+                <div class="absolute inset-0 bg-gradient-to-br from-pink-300/30 via-purple-200/20 to-yellow-300/30"></div>
+              </div>
+              <div class="absolute inset-0 pointer-events-none">
+                ${[...Array(20)].map((_, i) => `<div class="absolute animate-float opacity-30" style="left: ${Math.random() * 100}%; top: ${Math.random() * 100}%; animation-delay: ${Math.random() * 3}s; font-size: ${Math.random() * 20 + 15}px">${['💕', '🎀', '🌟', '💫', '🎈', '🎂', '🐨'][Math.floor(Math.random() * 7)]}</div>`).join('')}
+              </div>
+            ` : ''}
+            
+            <div class="relative z-10 text-center px-6 max-w-4xl">
+              ${!showLetter ? `
+                <div class="animate-bounce-in">
+                  <div class="mb-8">
+                    ${currentStep === 0 ? `
+                      <div class="${msg.animation} mb-8">
+                        <img src="${msg.boyKoala}" alt="Boy Koala" class="w-48 h-48 md:w-64 md:h-64 mx-auto rounded-full object-cover shadow-romantic border-4 border-blue-300/50">
+                        <div class="text-center mt-4 text-2xl">🤴</div>
+                      </div>
+                    ` : `
+                      <div class="${msg.animation} mb-8 flex items-center justify-center gap-8">
+                        <div class="relative">
+                          <img src="${msg.boyKoala}" alt="Boy Koala" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-romantic border-4 border-blue-300/50">
+                          <div class="absolute -top-2 -right-2 text-2xl">🤴</div>
+                        </div>
+                        <div class="text-4xl animate-heart-beat">💕</div>
+                        <div class="relative">
+                          <img src="${msg.girlKoala}" alt="Girl Koala" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-romantic border-4 border-pink-300/50">
+                          <div class="absolute -top-2 -right-2 text-2xl">👸</div>
+                        </div>
+                      </div>
+                    `}
+                    
+                    <h1 class="text-5xl md:text-7xl font-bold mb-4 ${msg.font} ${msg.color} drop-shadow-lg animate-fade-in">
+                      ${msg.title}
+                    </h1>
+                    <p class="text-xl md:text-3xl text-white font-poppins mb-12 animate-slide-up drop-shadow-md">
+                      ${msg.subtitle}
+                    </p>
+                  </div>
+                  
+                  <button onclick="handleNext()" class="bg-white/20 hover:bg-white/30 text-white font-bold py-4 px-8 rounded-full text-xl shadow-romantic animate-pulse border-2 border-white/30 backdrop-blur-sm font-poppins">
+                    ${msg.buttonText}
+                  </button>
+                </div>
+              ` : `
+                <div class="animate-bounce-in relative">
+                  <div class="absolute inset-0 pointer-events-none">
+                    ${[...Array(50)].map((_, i) => `<div class="absolute animate-float opacity-70" style="left: ${Math.random() * 100}%; top: ${Math.random() * 100}%; animation-delay: ${Math.random() * 5}s; font-size: ${Math.random() * 30 + 20}px">${['✨', '🎊', '🎈', '💕', '🎂', '🌟', '💝', '🎀', '🎁', '🐨'][Math.floor(Math.random() * 10)]}</div>`).join('')}
+                  </div>
+                  
+                  <div class="mb-8 animate-hug-arms relative">
+                    <img src="koalas-hugging-gifts.jpg" alt="Koalas Hugging" class="w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full object-cover shadow-romantic border-8 border-pink-300 mb-6">
+                  </div>
+                  
+                  <div class="mb-8 relative">
+                    <h1 class="text-4xl md:text-6xl font-vibes text-yellow-400 mb-6 drop-shadow-lg animate-heart-beat">
+                      ${letterScreenMessages.title1 || "Happy Sweet 16 happy birthday sweet heart now you are turn 16"}
+                    </h1>
+                    <h2 class="text-5xl md:text-7xl font-dancing text-white mb-4 drop-shadow-lg animate-bounce-in">
+                      ${letterScreenMessages.title2 || "Beautiful Anjana! 🎉"}
+                    </h2>
+                    <p class="text-2xl md:text-3xl text-white font-poppins mb-12 animate-fade-in">
+                      ${letterScreenMessages.message || "🐨 Click on the magical letter to read your special surprise! 🐨"}
+                    </p>
+                  </div>
+                  
+                  <div onclick="handleLetterClick()" class="relative cursor-pointer group animate-float hover:scale-110 transition-all duration-500">
+                    <div class="text-8xl md:text-9xl mb-4">💌</div>
+                    <div class="absolute -inset-4 bg-white/10 rounded-full blur-xl group-hover:bg-white/20 transition-all duration-500"></div>
+                    <p class="text-yellow-400 font-dancing text-2xl font-bold animate-pulse">✨ Click to Open Your Love Letter ✨</p>
+                  </div>
+                </div>
+              `}
+            </div>
+            
+            ${currentStep > 0 ? `
+              <div class="absolute top-10 left-10 text-6xl animate-bounce-in">🎈</div>
+              <div class="absolute top-20 right-10 text-5xl animate-bounce-in">🎂</div>
+              <div class="absolute bottom-20 left-16 text-7xl animate-bounce-in">🐨</div>
+              <div class="absolute bottom-10 right-20 text-6xl animate-bounce-in">💝</div>
+            ` : ''}
+          </div>
+        `;
+      } else {
+        // Surprise View: Love Letter + Gallery + Footer
+        html += `
+          <div class="animate-fade-in">
+            <section class="py-16 px-6" style="background: linear-gradient(180deg, #fee2e2 0%, #fce7f3 25%, #f3e8ff 50%, #fce7f3 75%, #fee2e2 100%); min-h-screen;">
+              <div class="max-w-4xl mx-auto px-6 relative">
+                <div class="absolute inset-0">
+                  <img src="girl-koala-cake.jpg" alt="Girl Koala" class="w-full h-full object-cover opacity-5">
+                </div>
+                
+                <div class="absolute inset-0 pointer-events-none overflow-hidden">
+                  ${[...Array(30)].map((_, i) => `<div class="absolute animate-float opacity-40" style="left: ${Math.random() * 100}%; top: ${Math.random() * 100}%; animation-delay: ${Math.random() * 5}s; font-size: ${Math.random() * 20 + 15}px">${['💕', '💖', '💗', '💝', '🌹', '✨', '🦋', '🌟'][Math.floor(Math.random() * 8)]}</div>`).join('')}
+                </div>
+                
+                <div class="relative bg-pink-50 bg-opacity-95 border-2 border-pink-300/50 shadow-romantic p-8 md:p-12 animate-fade-in overflow-hidden rounded-lg backdrop-blur-md">
+                  <div class="absolute inset-0 bg-gradient-to-br from-pink-100/30 via-purple-100/30 to-pink-50/30 animate-pulse"></div>
+                  <div class="absolute top-4 left-4 text-3xl animate-heart-beat">🌹</div>
+                  <div class="absolute top-4 right-4 text-3xl animate-heart-beat">🌹</div>
+                  <div class="absolute bottom-4 left-4 text-3xl animate-heart-beat">🦋</div>
+                  <div class="absolute bottom-4 right-4 text-3xl animate-heart-beat">🦋</div>
+                  
+                  <div class="relative z-10">
+                    <div class="text-center mb-8 relative">
+                      <h1 class="text-4xl md:text-5xl font-dancing text-pink-500 mb-4 animate-heart-beat drop-shadow-lg">💕💕💕💕💕💕💕💕💕💕💕💕💕💕💕</h1>
+                      <h2 class="text-3xl md:text-4xl font-vibes text-black mb-2 drop-shadow-lg animate-fade-in">${loveLetterMessages.title || loveLetterMessages.loveLetterTitle || ""}</h2>
+                      <p class="text-xl md:text-2xl font-playfair text-black animate-slide-up italic">${loveLetterMessages.subtitle || loveLetterMessages.loveLetterSubtitle || ""}</p>
+                    </div>
+                    
+                    <div class="space-y-6 text-black font-poppins leading-relaxed">
+                      <div class="bg-pink-50/80 rounded-lg p-6 border border-pink-200/50 animate-fade-in backdrop-blur-sm">
+                        <p class="text-lg md:text-xl">${loveLetterMessages.paragraph1 || loveLetterMessages.loveLetterParagraph1 || ""}</p>
+                      </div>
+                      <div class="bg-pink-50/80 rounded-lg p-6 border border-pink-200/50 animate-fade-in backdrop-blur-sm">
+                        <p class="text-lg md:text-xl font-dancing italic">${loveLetterMessages.quote || loveLetterMessages.loveLetterQuote || ""}</p>
+                      </div>
+                      <div class="bg-pink-50/80 rounded-lg p-6 border border-pink-200/50 animate-fade-in backdrop-blur-sm">
+                        <p class="text-lg md:text-xl">${loveLetterMessages.paragraph2 || loveLetterMessages.loveLetterParagraph2 || ""}</p>
+                      </div>
+                      <div class="bg-pink-50/80 rounded-lg p-6 border border-pink-200/50 animate-fade-in backdrop-blur-sm">
+                        <p class="text-lg md:text-xl">${loveLetterMessages.paragraph3 || loveLetterMessages.loveLetterParagraph3 || ""}</p>
+                      </div>
+                      <div class="bg-pink-50/80 rounded-lg p-6 border border-pink-200/50 animate-fade-in backdrop-blur-sm">
+                        <p class="text-lg md:text-xl">${loveLetterMessages.paragraph4 || loveLetterMessages.loveLetterParagraph4 || ""}</p>
+                      </div>
+                      <div class="text-center bg-gradient-to-r from-pink-100/80 to-purple-100/80 rounded-lg p-8 border-2 border-pink-300/50 animate-heart-beat">
+                        <h3 class="text-2xl md:text-3xl font-dancing text-black mb-4">${loveLetterMessages.birthdayWish || loveLetterMessages.loveLetterBirthdayWish || ""}</h3>
+                        <p class="text-xl md:text-2xl font-vibes text-black">${loveLetterMessages.birthdayMessage || loveLetterMessages.loveLetterBirthdayMessage || ""}</p>
+                      </div>
+                      <div class="text-center">
+                        <p class="text-xl md:text-2xl font-dancing text-black mb-4">${loveLetterMessages.closing1 || loveLetterMessages.loveLetterClosing1 || ""}</p>
+                        <p class="text-2xl md:text-3xl font-vibes text-black animate-heart-beat">${loveLetterMessages.closing2 || loveLetterMessages.loveLetterClosing2 || ""}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            
+            <section class="min-h-screen py-16 px-6 relative overflow-hidden gradient-love">
+              <div class="absolute inset-0 pointer-events-none">
+                ${[...Array(40)].map((_, i) => `<div class="absolute animate-float opacity-50" style="left: ${Math.random() * 100}%; top: ${Math.random() * 100}%; animation-delay: ${Math.random() * 6}s; font-size: ${Math.random() * 25 + 20}px">${['🐨', '🎂', '🎈', '💕', '🌟', '✨', '🎁', '🦋', '🌹', '👑'][Math.floor(Math.random() * 10)]}</div>`).join('')}
+              </div>
+              
+              <div class="max-w-6xl mx-auto relative z-10">
+                <div class="text-center mb-16 relative">
+                  <h2 class="text-4xl md:text-6xl font-vibes text-black mb-8 drop-shadow-lg animate-heart-beat">${galleryMessages.title || galleryMessages.photoGalleryTitle || ""}</h2>
+                  <p class="text-2xl md:text-3xl font-dancing text-black animate-fade-in">${galleryMessages.subtitle || galleryMessages.photoGallerySubtitle || ""}</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-16">
+                  <div class="bg-white/10 backdrop-blur-md border-2 border-white/20 shadow-romantic p-6 hover:scale-105 transition-all relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-pink-400/10 to-purple-400/10 opacity-0 hover:opacity-100 transition-all"></div>
+                    <div class="absolute top-4 right-4 text-2xl animate-bounce-in">👑</div>
+                    <div class="relative z-10">
+                      <img src="koala-celebration.jpg" alt="Koala Celebration" class="w-full h-64 object-cover rounded-lg mb-6 border-4 border-white/30">
+                      <h3 class="text-2xl md:text-3xl font-dancing text-black animate-heart-beat mb-4">${galleryMessages.card1Title || galleryMessages.koalaCard1Title || ""}</h3>
+                      <p class="text-lg md:text-xl text-black font-poppins leading-relaxed">${galleryMessages.card1Text || galleryMessages.koalaCard1Text || ""}</p>
+                    </div>
+                  </div>
+                  
+                  <div class="bg-white/10 backdrop-blur-md border-2 border-white/20 shadow-romantic p-6 hover:scale-105 transition-all relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-yellow-400/10 to-pink-400/10 opacity-0 hover:opacity-100 transition-all"></div>
+                    <div class="absolute top-4 right-4 text-2xl animate-bounce-in">🎂</div>
+                    <div class="relative z-10">
+                      <img src="birthday-cake.jpg" alt="Birthday Cake" class="w-full h-64 object-cover rounded-lg mb-6 border-4 border-white/30">
+                      <h3 class="text-2xl md:text-3xl font-dancing text-black animate-heart-beat mb-4">${galleryMessages.card2Title || galleryMessages.koalaCard2Title || ""}</h3>
+                      <p class="text-lg md:text-xl text-black font-poppins leading-relaxed">${galleryMessages.card2Text || galleryMessages.koalaCard2Text || ""}</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="text-center mb-16 relative">
+                  <div class="bg-gradient-to-r from-pink-400/20 via-purple-400/20 to-yellow-400/20 backdrop-blur-md rounded-3xl p-12 border-4 border-white/30 shadow-romantic animate-pulse">
+                    <h3 class="text-3xl md:text-5xl font-dancing text-black mb-6 animate-bounce-in drop-shadow-lg">${galleryMessages.centralMessage1 || ""}</h3>
+                    <p class="text-xl md:text-2xl text-black font-poppins animate-fade-in">${galleryMessages.centralMessage2 || ""}</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            
+            <footer class="py-12 text-center gradient-romantic">
+              <div class="max-w-2xl mx-auto px-6">
+                <h3 class="text-4xl font-dancing text-black mb-4 animate-heart-beat">${finalFooterMessages.title || galleryMessages.finalTitle || ""}</h3>
+                <p class="text-black text-lg mb-6 font-poppins">${finalFooterMessages.message || galleryMessages.finalMessage || ""}</p>
+                <div class="text-4xl animate-bounce-in font-vibes">🎂🎈🎁💝🐨💕🎉🎊</div>
+              </div>
+            </footer>
+          </div>
+        `;
+      }
+      
+      app.innerHTML = html;
+    }
+    
+    // Load messages and then render
+    loadMessages();
+  </script>
+</body>
+</html>
