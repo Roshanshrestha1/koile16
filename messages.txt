@@ -2,68 +2,68 @@
   "loveLetter": {
     "title": "💌 My Precious Anjana - My Everything 💌",
     "subtitle": "On Your Magical Sweet 16th Birthday ✨",
-    "paragraph1": "My Beloved Anjana, today marks the most special day - your 16th birthday! 🎉 As I write this letter, my heart overflows with endless love and pure joy to celebrate you, the most precious soul who has become my entire universe.",
-    "quote": "Just like the adorable koalas you love so deeply, you bring such gentle sweetness, infinite warmth, and pure magic to my world. Your smile is my sunrise, your laugh is my favorite symphony, and your love is my greatest treasure. 🐨💕✨",
-    "paragraph2": "Sixteen magical years ago, heaven sent an angel to earth - that angel was you! Today, I celebrate not just your birthday, but every breathtaking moment of your existence - your incredible kindness, your beautiful soul, your gentle heart, and the way you make everything around you sparkle with love and happiness.",
-    "paragraph3": "You are not just a person in my life, Anjana - you ARE my life! You are my dream come true, my heart's deepest wish, and the reason my soul feels complete. Every day with you feels like a beautiful fairy tale that I never want to end.",
-    "paragraph4": "As you blow out your 16 candles today, know that my biggest wish is to see your beautiful smile forever, to celebrate countless more birthdays together, and to create infinite magical memories with the love of my life. You deserve all the happiness in the universe! 🎂✨💫",
-    "birthdayWish": "Happy 16th Birthday, My Heart, My Soul, My Everything! 🎈👑",
-    "birthdayMessage": "You are loved beyond infinity, beyond words, beyond time itself! 💝✨",
-    "closing1": "With every beat of my heart, with all my soul,",
+    "paragraph1": "Anjan (Sanu, Koile) — today is your special day, the most beautiful page in the story of my heart. I don’t know if you’re still beside me or somewhere far away, but my heart still whispers your name every single day. My love for you has never faded — it has only grown softer, deeper, and more eternal with time. You live in every heartbeat I take, in every quiet prayer I make, and in every dream that still carries your smile. ❤️ Even though time and distance have built walls between us, nothing can ever erase the love I feel for you — the love that began with laughter and still glows gently within me. 💫",
+    "quote": "Just like the adorable koalas you love so much, you brought that same sweetness, innocence, and warmth into my life. Your smile was my sunrise, your laughter my favorite melody, and your love my greatest peace. 🐨💕 You wrapped my heart in kindness, taught my soul how to love again, and showed me that even a single glance could last forever. I miss that magic — I miss you, my gentle koala girl. 🌸✨",
+    "paragraph2": "🌹 The Angel Who Turned Sixteen 🌹 Sixteen years ago, heaven sent down an angel — and that angel was you, my beloved Anjana. Today, I celebrate not only your birthday but also the miracle of you — your kindness, your beautiful soul, and your bright spirit that once turned my darkness into light. 💖",
+    "paragraph3": "You are not just someone in my life, Anjana — you ARE my life. You are my dream come true, my heart’s deepest wish, and the reason my soul feels complete. Every moment with you was a fairy tale I never wanted to end — a story still written across every corner of my heart. 💞",
+    "paragraph4": "Even though I can’t hold your hand now, I still hold your memory close. I still whisper your name when the stars appear, hoping that somehow, somewhere, you can feel my love reaching out to you. 🌙💖 I know I wasn’t perfect, and I’m sorry for the moments I hurt you. If love could rewrite time, I’d spend forever making things right. 💔",
+    "birthdayWish": "🎂 Happy 16th Birthday, My Heart, My Soul, My Everything! 🎈👑",
+    "birthdayMessage": "You are loved beyond infinity, beyond words, beyond time itself. 💝✨ No matter where life takes us, you will always be the most precious part of my story — my forever blessing, my endless love.",
+    "closing1": "With every beat of my heart and every whisper of my soul,",
     "closing2": "Your Forever Loving Heart 💕👑✨"
+ },
+"dramaticSequence": [
+  {
+    "title": "💕 I Want to Tell You Something 💕",
+    "subtitle": "Something truly special — straight from my heart to yours... 💖",
+    "buttonText": "Tell me 💫"
   },
-  "dramaticSequence": [
-    {
-      "title": "💕 I want to say you something 💕",
-      "subtitle": "Something very special from my heart...",
-      "buttonText": "Tell me 💫"
-    },
-    {
-      "title": "🎉 HAPPY BIRTHDAY! 🎉",
-      "subtitle": "Today is your special day!",
-      "buttonText": "Next 🎂"
-    },
-    {
-      "title": "💕 You are CUTE 💕",
-      "subtitle": "The most adorable person in the world",
-      "buttonText": "Next 💖"
-    },
-    {
-      "title": "✨ You are the BEST ✨",
-      "subtitle": "Amazing, wonderful, and perfect in every way",
-      "buttonText": "Next ⭐"
-    },
-    {
-      "title": "🎉 You are SPECIAL 🎉",
-      "subtitle": "One in a million, absolutely incredible",
-      "buttonText": "Next 💎"
-    },
-    {
-      "title": "💝 You are LOVED 💝",
-      "subtitle": "More than words can ever express",
-      "buttonText": "🎁 SURPRISE! 🎁"
-    }
-  ],
-  "letterScreen": {
-    "title1": "Happy Sweet 16 happy birthday sweet heart now you are turn 16",
-    "title2": "Beautiful Anjana! 🎉",
-    "message": "🐨 Click on the magical letter to read your special surprise! 🐨"
+  {
+    "title": "🎉 HAPPY BIRTHDAY TO YOU! 🎉",
+    "subtitle": "Today is your magical day — a day as bright and beautiful as your smile! 🌟",
+    "buttonText": "Next 🎂"
   },
+  {
+    "title": "💕 You Are So CUTE 💕",
+    "subtitle": "The most adorable soul in the whole world — sweet, kind, and simply perfect! 💗",
+    "buttonText": "Next 💖"
+  },
+  {
+    "title": "✨ You Are the BEST ✨",
+    "subtitle": "Truly amazing, wonderfully unique, and flawless in every single way! 🌈",
+    "buttonText": "Next ⭐"
+  },
+  {
+    "title": "🎉 You Are So SPECIAL 🎉",
+    "subtitle": "One in a million — rare, radiant, and unforgettable! 💎",
+    "buttonText": "Next 💎"
+  },
+  {
+    "title": "💝 You Are LOVED 💝",
+    "subtitle": "Loved beyond words, beyond distance, beyond forever itself. 💫",
+    "buttonText": "🎁 SURPRISE! 🎁"
+  }
+],
+"letterScreen": {
+  "title1": "🎂 Happy Sweet 16, My Precious Heart! 💕 You’ve officially turned 16 today! 🎉",
+  "title2": "Beautiful Anjana! 🌸✨",
+  "message": "🐨 Tap on the magical letter to open your surprise — it’s filled with love, wishes, and memories just for you! 💌🐨"
+},
   "photoGallery": {
     "title": "🐨 Magical Birthday Memories for My Princess 🎂",
-    "subtitle": "Every moment with you is a treasure worth celebrating! 💎✨",
-    "card1Title": "🎉 Royal Koala Birthday Kingdom 🎉",
-    "card1Text": "Just like these adorable koalas celebrating in their magical kingdom, today is all about celebrating YOU, my beautiful princess Anjana! May your day overflow with infinite joy, endless laughter, and sweetness beyond imagination - just like these precious friends sharing their most special moment together! 👑✨🐨",
+    "subtitle": "Every moment with you is a memory wrapped in love — a treasure I’ll cherish forever. 💎✨",
+    "card1Title": "👑 Koala Kingdom Celebration 👑",
+    "card1Text": "In my heart, there still exists a kingdom where you are the queen — surrounded by laughter, stars, and the softest koalas celebrating your day. 🎉🐨 I imagine them dancing under the moonlight, whispering your name, reminding me that even though you’re far away, your magic still lives on — forever part of my story, forever the heartbeat of my world. 💞✨",
     "card2Title": "🎂 Enchanted Sweet 16 Dreams 🎂",
-    "card2Text": "A cake as beautiful and magical as you deserve, my darling! As you make your wish and blow out these candles, know that my greatest wish is for your eternal happiness, endless dreams coming true, and our love story to continue forever and always. Sweet sixteen has never looked so absolutely perfect! 💫🌟💕",
-    "centralMessage1": "🎈 Happy Birthday My Life, My Soul, My Everything Anjana! 🎈",
-    "centralMessage2": "You don't just make every day brighter - you ARE the light, the magic, the wonder that makes my entire universe shine with infinite love and beauty! 💫👑✨",
+    "card2Text": "A cake as beautiful and magical as you deserve, my darling! 🎂✨ As you close your eyes and make your wish, I make mine too — for your eternal happiness, for every dream to bloom, and for your heart to always feel loved, even if it’s no longer by me. 💫💖 I know I’ve made mistakes, and I’m truly sorry, Anjana. If I could turn back time, I would spend every second making you smile instead of causing you pain. Please forgive the parts of me that failed to protect our love. 💔 You will always be my sweetest memory — the most beautiful chapter of my life. Even though we’re apart, my love for you still burns softly, like the candles on your cake — glowing with warmth, hope, and endless affection. 🕯️💞 Sweet sixteen has never looked so perfect, so precious, so you. 🌟💕",
+    "centralMessage1": "🎂 Sweet 16 Wishes – From My Soul to Yours 🎂",
+    "centralMessage2": "Happy 16th Birthday, my heart, my soul, my everything. 🎈 You don’t just make life brighter — you are the light that still shines in my memories. Even though you’re far away, I feel your presence in every quiet moment, in every song, and in every sunrise. 🌅 No matter where you are, Anjana, please know this: You are loved beyond time, beyond distance, beyond this life itself. 💝✨ With all my heart, with all my soul, forever yours — Your Forever Loving Heart 💕👑✨",
     "footerTitle": "🎉 Sweet 16 Never Looked So Absolutely Divine! 🎉",
-    "footerMessage": "Anjana, my precious angel, you are not just the sweetest, most wonderful person - you are my heart, my soul, my reason for existing! Today we celebrate the most beautiful miracle that ever happened to this world - YOU! May this magical day overflow with infinite love, boundless laughter, and all your heart's deepest desires - especially endless koala cuddles! 🐨💕👑"
+    "footerMessage": "Anjana, my precious angel, you are not just the sweetest, most wonderful person — you are my heart, my soul, my reason to keep believing in love. Today, I celebrate the most beautiful miracle this world ever received — YOU. May your magical day overflow with infinite love, boundless laughter, and every wish your heart desires — especially endless koala cuddles! 🐨💕👑"
   },
   "finalFooter": {
     "title": "🎉 Sweet 16 Never Looked So Beautiful! 🎉",
-    "message": "Anjana, you are the sweetest, most wonderful person, and today we celebrate YOU! May this special day be filled with love, laughter, and all your favorite things - especially koalas! 🐨💕"
+    "message": "Anjana, you are the sweetest, most extraordinary soul, and today is all about YOU! May this special day be filled with love, laughter, and everything that makes you smile — especially the cutest koalas that remind me of you. 🐨💕"
   }
 }
 
